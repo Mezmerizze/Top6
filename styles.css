@@ -4,15 +4,23 @@ body {
   background-image: url(images/BG.webp);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 200vh;
+  height: 230vh;
+}
+
+@media (max-width:700px){
+  body{
+    background-image: url(images/BG.webp);
+    height: 250vh;
+    background-size: cover;
+  
+  }
 }
 
 .BG-Birds-Wrapper{
   position: absolute;
+  overflow: hidden;
   
-
-
-}
+  }
 
 .Bird1{
   position: absolute;
@@ -67,7 +75,15 @@ nav a:hover {
     
 
 .logo {
-  width: 200px;
+  width: 100px;
+}
+
+@media (max-width:700px) {
+  .logo{
+    width: 100px;
+
+  }
+  
 }
 
 
@@ -132,6 +148,20 @@ header {
   border-radius: 30px;
   padding-top: 150px; 
 }
+
+@media (max-width: 700px) {
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding-top: 150px;
+    align-items: center;
+  }
+  
+  }
 
 
 
@@ -207,6 +237,7 @@ header {
 
 .checkbox-wrapper-5 .check {
   --size: 40px;
+  z-index: 20;
 
   position: relative;
   background: linear-gradient(90deg, #f19af3, #f099b5);
@@ -320,6 +351,7 @@ header {
 
 .checkbox-wrapper-6 .check {
   --size: 40px;
+  z-index: 20;
 
   position: relative;
   background: linear-gradient(90deg, #f19af3, #f099b5);
@@ -430,6 +462,7 @@ header {
 
 .checkbox-wrapper-7 .check {
   --size: 40px;
+  z-index: 20;
 
   position: relative;
   background: linear-gradient(90deg, #f19af3, #f099b5);
@@ -538,11 +571,40 @@ header {
   margin: 0 auto;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 20px #222);
+  display: none;
+  
+
 
 }
 
 
-footer{
-  background-color: #f19af3;
-  height: 30vh;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
