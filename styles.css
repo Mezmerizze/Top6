@@ -4,32 +4,47 @@ body {
   background-image: url(images/BG.webp);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 230vh;
+  height: 230dvh;
 }
 
 @media (max-width:700px){
   body{
+    position:relative;
+    background-position: center;
     background-image: url(images/BG.webp);
     height: 250vh;
     background-size: cover;
+    overflow-x: hidden;
   
+  }
+}
+
+@media (max-width:480px){
+  body {
+    position:relative;
+    background-position: center;
+    background-image: url(images/BG.webp);
+    height: 300vh;
+    background-size: cover;
+    overflow-x: hidden;
   }
 }
 
 .BG-Birds-Wrapper{
   position: absolute;
-  overflow: hidden;
   
   }
 
 .Bird1{
   position: absolute;
   animation: wiggle 15s infinite ease-in-out;
+  overflow: hidden;
 }
 
 .Bird2{
   position: absolute;
   animation: wiggle 14s infinite ease-in-out;
+  overflow: hidden;
 }
 
 .Bird3{
@@ -40,11 +55,13 @@ body {
 .Bird4{
   position: absolute;
   animation: wiggle 11s infinite ease-in-out;
+  overflow: hidden;
 }
 
 .Bird5{
   position: absolute;
   animation: wiggle 10s infinite ease-in-out;
+  overflow: hidden;
 }
 
 
@@ -54,23 +71,29 @@ nav {
   display: flex;
   justify-content: space-between;
   padding-left: 400px;
-  padding-right: 400px;
+  padding-right: 200px;
   align-items: center;
   z-index: 100;
   position: relative;
 }
 
+@media(max-width:480px){
+  nav{
+    display: none;
+  }
+}
+
 nav a {
   text-decoration: none;
-  color: #242424;
-  font-size: 18px;
-  margin: 0 15px;
+  color: #ffffff;
+  font-size: 25px;
+  margin: 0 20px;
   transition: color 0.3s ease;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Bebas Neue;
 }
 
 nav a:hover {
-  color: #ffffff;
+  color: #000000;
 }
     
 
@@ -96,7 +119,31 @@ nav a:hover {
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 10px #222);
 }
- 
+
+
+@media (max-width:700px){
+  .wood-board{
+  position: absolute;
+  width: 100%;
+  left: 10px;
+  top:-60px;
+  z-index: 2;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 10px #222);
+  }
+}
+
+@media (max-width:480px){
+  .wood-board{
+  position: absolute;
+  width: 120%;
+  left:-30px;
+  top:-10px;
+  z-index: 2;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 10px #222);
+  }
+}
 
 
 
@@ -163,14 +210,18 @@ header {
   
   }
 
-
-
-
 .person-content-wrapper {
   position: relative;
   width: 400px;
   height: 400px;
- 
+}
+
+@media (max-width:480px){
+  .person-content-wrapper{
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .frame{
@@ -196,6 +247,28 @@ header {
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 10px #222);
   
+}
+
+@media(max-width:480px){
+  .rotating-words {
+  color: white;
+  font-family: Montserrat;
+  font-weight: 100;
+  background-image:url(images/TaskBrett.webp);
+  background-size:80%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  font-size: 25px;
+  font-family: Montserrat;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 5px 5px 10px #222;
+  height: 150px;
+  margin-top:0;
+  padding: 55px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 10px #222);
+  }
 }
 
 .tripple-column-wrapper{
