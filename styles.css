@@ -15,7 +15,6 @@ body {
     background-image: url(images/BG.webp);
     height: 250vh;
     background-size: cover;
-
   
   }
 }
@@ -27,19 +26,16 @@ body {
     background-image: url(images/BG.webp);
     height: 300vh;
     background-size: cover;
-   
-
   }
 }
 
 .BG-Birds-Wrapper{
-  position: absolute;
-	
+  position: absolute;  
   }
 
 @media (max-width:480){
   .BG-Birds-Wrapper{
-    overflow: hidden;
+    overflow:hidden;
   }
 }
 
