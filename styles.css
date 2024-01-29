@@ -27,13 +27,14 @@ body {
     background-image: url(images/BG.webp);
     height: 300vh;
     background-size: cover;
-    overflow-x: hidden;
+   
 
   }
 }
 
 .BG-Birds-Wrapper{
   position: absolute;
+  overflow-x: hidden;
   
   }
 
