@@ -39,7 +39,7 @@ body {
 
 @media (max-width:480){
   .BG-Birds-Wrapper{
-    overflow-x:hidden;
+    overflow: hidden;
   }
 }
 
