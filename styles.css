@@ -34,9 +34,14 @@ body {
 
 .BG-Birds-Wrapper{
   position: absolute;
-  overflow-x: hidden;
-  
+	
   }
+
+@media (max-width:480){
+  .BG-Birds-Wrapper{
+    overflow-x:hidden;
+  }
+}
 
 .Bird1{
   position: absolute;
